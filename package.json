@@ -1,10 +1,17 @@
 {
+  "homepage": "https://vineetvermaa61/github.io/Discord_Clone",
   "scripts": {
-    "start":"vite" },
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "vite"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
